@@ -887,7 +887,7 @@ Remaining trials
 
 This trial is used when participants are asked to place their fingers on specific response
 buttons. On the touchscreen, this trial presents the (inactive) response buttons to the participants.
-<trial getReady>
+<trial getReady_>
 / stimulusframes = [1 = getReady]
 / trialduration = 7000
 / validresponse = ("D", "F", "J", "K")
@@ -938,12 +938,16 @@ buttons. On the touchscreen, this trial presents the (inactive) response buttons
 	EXPERIMENT 
 **************************************************************************************************************
 **************************************************************************************************************
-
 <expt>
 / preinstructions = (stroop)
 / blocks = [
+	// Normal stroop task
 	1 = stroop;
-	2 = finish;
+	// Experimental Blocks
+	2 = posi;
+	3 = neg;
+	// Experimental Blocks
+	4 = finish;
 ]
 </expt>
 
