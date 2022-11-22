@@ -1,0 +1,15 @@
+build	computer.platform	date	time	subject	group	session	blockcode	blocknum	trialcode	trialnum	congruency	stimulusitem1	response	responseCategory	correct	latency	congruentcorrect	incongruentcorrect
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	blackcontrol	2	3	blue	37	black	1	1662	nan	nan
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	redcongruent	3	1	red	32	red	1	1770	1	nan
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	bluecongruent	4	1	blue	36	blue	1	1270	2	nan
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	greencongruent	5	1	green	33	green	1	1013	3	nan
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	blackincongruent	6	2	green	37	black	1	957	3	1
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	greencongruent	7	1	green	33	green	1	643	4	1
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	redcontrol	8	3	black	32	red	1	948	4	1
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	greencontrol	9	3	blue	33	green	1	900	4	1
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	blackincongruent	10	2	blue	37	black	1	1366	4	2
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	blackincongruent	11	2	red	37	black	1	1497	4	3
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	greencontrol	12	3	red	33	green	1	895	4	3
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	redcongruent	13	1	red	32	red	1	985	5	3
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	bluecongruent	14	1	blue	36	blue	1	1261	6	3
+6.6.1	win	2022-11-22	16:40:33	1	1	1	stroop	1	greencontrol	15	3	black	Ctrl+'Q'	blue	1	5263	6	3
