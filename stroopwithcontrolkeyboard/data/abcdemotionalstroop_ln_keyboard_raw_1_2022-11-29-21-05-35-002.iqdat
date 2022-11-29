@@ -1,0 +1,4 @@
+build	computer.platform	date	time	subject	group	session	blockcode	blocknum	trialcode	trialnum	keyAssignment	wordposition	word_y	congruence	selectStim	stimulusitem1	stimulusitem2	stimulusitem3	correctButton	response	correct	latency	list.accuracy.mean
+6.6.1	win	2022-11-29	16:05:35	1	1	1	practice1	3	practice1	2	leftnegative	1	50pct	0	5		mad	GOOD = P	negativeButton	16	1	67	1
+6.6.1	win	2022-11-29	16:05:35	1	1	1	practice1	3	practice1	4	leftnegative	1	50pct	0	2		happy	GOOD = P	positiveButton	16	0	20	0.5
+6.6.1	win	2022-11-29	16:05:35	1	1	1	practice1	3	feedback	5	leftnegative	1	50pct	0	2		Incorrect	0	positiveButton	Ctrl+'Q'	1	1699	0.5
