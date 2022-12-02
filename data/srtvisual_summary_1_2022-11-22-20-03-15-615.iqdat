@@ -1,2 +1,0 @@
-inquisit.version	computer.platform	startdate	starttime	subjectid	groupid	sessionid	elapsedtime	completed	trial.SRTT.totalmeanlatency	trial.SRTT.totalmedianlatency	trial.SRTT.totalminlatency	trial.SRTT.totalmaxlatency	trial.SRTT.totalsdlatency	trial.SRTT.totalvarlatency
-6.6.1	win	2022-11-22	15:03:15	1	1	1	20150	0	1426	1426	0	2852	2016.6685399440334549581	4066952

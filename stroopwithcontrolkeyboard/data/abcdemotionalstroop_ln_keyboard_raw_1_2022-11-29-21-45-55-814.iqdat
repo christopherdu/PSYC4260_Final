@@ -1,6 +1,0 @@
-build	computer.platform	date	time	subject	group	session	blockcode	blocknum	trialcode	trialnum	keyAssignment	wordposition	word_y	congruence	selectStim	stimulusitem1	stimulusitem2	stimulusitem3	correctButton	response	correct	latency	list.accuracy.mean
-6.6.1	win	2022-11-29	16:45:55	1	1	1	testE	2	testE	2	leftnegative	1	40pct	2	43		F38HS_9328.jpg	upset	negativeButton	16	1	1361	1
-6.6.1	win	2022-11-29	16:45:55	1	1	1	testE	2	testE	4	leftnegative	1	40pct	1	23		M11AS_6974.jpg	angry	negativeButton	16	1	1152	1
-6.6.1	win	2022-11-29	16:45:55	1	1	1	testE	2	testE	6	leftnegative	2	60pct	1	18		M6AS_5461.jpg	mad	negativeButton	16	1	795	1
-6.6.1	win	2022-11-29	16:45:55	1	1	1	testE	2	testE	8	leftnegative	2	60pct	2	39		F34HS_8209.jpg	mad	negativeButton	16	1	1019	1
-6.6.1	win	2022-11-29	16:45:55	1	1	1	testE	2	testE	10	leftnegative	2	60pct	1	28		F16HS_5924.jpg	joyful	positiveButton	Ctrl+'Q'	1	371	1
