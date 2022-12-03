@@ -247,7 +247,7 @@ Word presented for max. 2000ms (response window same) -> Feedback (correct, inco
 Press SPACEBAR to begin."
 /2 = "In this game, you will see some words describing feelings.  They will appear one at a time. 
  
-You are to press one <%expressions.buttoninstruct1%> if that feeling is usually used to describe indiviuduals as GOOD. You are to press another <%expressions.buttoninstruct2%> if that feeling is usually used to describes individuals as BAD.
+You are to press one <%expressions.buttoninstruct1%> if that feeling is usually used to describe  as GOOD. You are to press another <%expressions.buttoninstruct2%> if that feeling is usually used to describes  as BAD.
 
 The possible responses are:
 
@@ -262,7 +262,7 @@ Press <SPACEBAR> when you are ready to begin the practice."
 /4 = "Now we are going to make the task a bit harder. You still have to decide if the feeling described by the word is usually linked to GOOD or whether it is usually linked to BAD. BUT you have to ignore the face on which the word is printed. 
 "
 
-/5 = "You are finished with the practice trials. Decide whether the feeling described by the word is usually linked to  GOOD or whether it is usually linked to BAD.  Ignore the face in the background.
+/5 = "You are finished with the practice trials. Decide whether the feeling described by the word is usually linked to GOOD or whether it is usually linked to BAD.  Ignore the face in the background.
 
 
 Press <SPACEBAR> when you are ready to begin."
@@ -271,7 +271,6 @@ Press <SPACEBAR> when you are ready to begin."
 Press <SPACEBAR> to continue the task."
 /7 = "Thank you for playing this game!"
 </item>
-
 
 <item continueButtons>
 /1 = "Press <SPACEBAR> to Start"
@@ -356,6 +355,9 @@ Press <SPACEBAR> to continue the task."
 *******************************
 General Helper Instructions
 ******************************
+<item endScreen>
+/1 = "Thank you for participating in this experiment! The purpose of this experiment was to observe the implicit biases we have for conventional attractiveness. We wanted to see if conventional attractiveness facilitated quicker response time for positive words and if unconventional faces faciltiated quicker response time for negative words."
+</item>
 
 <text repeatPractice>
 / items = ("Let's try that again.")
@@ -434,11 +436,12 @@ practice 2
 / resetinterval = 0
 </list>
 
+>> Replace these pictures with ones we're using to prime/set expectations.
 <item pics_practice2>
-/1 = "M18HS_8848.jpg"
-/2 = "M20AS_9297.jpg"
-/3 = "M18HS_8848.jpg"
-/4 = "M20AS_9297.jpg"
+/1 = "attr1.jpg"
+/2 = "attr3.jpg"
+/3 = "uattr5.jpg"
+/4 = "uattr9.jpeg"
 </item>
 
 <item words_practice2>
@@ -589,33 +592,41 @@ testMC
 >> CURRENTLY: It seems congurent/incongreutn depends on picture position under pics_testE (e.g., 1) which corresponds to the same position in words_testE (e.g., 1 = 1)
 >> ADDITIONAL PROBLEM: correctButton_testE determines what is a correct answer; how do we determine what the number corresponds to?
 <item pics_testE>
-// Conventionally Attractive faces
-/1="unattr/uattr1.jpg" // Test incogruent stimulus; it works.
-/2="attr/attr2.jpg"
-/3="attr/attr3.jpg"
-/4="attr/attr4.jpg"
-/5="attr/attr5.jpg"
-/6="attr/attr6.jpg"
-/7="attr/attr7_b.jpg"
-/8="attr/attr8_b.jpg"
-/9="attr/attr9_b.jpeg"
-/10="attr/attr10_a.jpg"
-/11="attr/attr11_a.jpg"
-/12="attr/attr12_a.jpg"
-
-// Conventionally Unattractive faces
-/13="unattr/uattr1.jpg"
-/14="unattr/uattr2.jpg"
-/15="unattr/uattr3.jpg"
-/16="unattr/uattr4.jpg"
-/17="unattr/uattr5.jpg"
-/18="unattr/uattr6.jpg"
-/19="unattr/uattr7.jpg"
-/20="unattr/uattr8.jpg"
-/21="unattr/uattr9.jpeg"
-/22="unattr/uattr10.jpg"
-/23="unattr/uattr11.jpg"
-/24="unattr/uattr12.jpg"
+// 1 - 2 congruent - DONE.
+/1="attr1.jpg"
+/2="attr2.jpg"
+// 3- 4 incongruent - DONE.
+/3="uattr1.jpg"
+/4="uattr2.jpg"
+// 5 - 6 congruent - DONE .
+/5="attr3.jpg"
+/6="attr4.jpg"
+// 7 - 9 icongruent - DONE.
+/7="uattr3.jpg"
+/8="uattr4.jpg"
+/9="uattr5.jpg"
+// 10 - 11 congruent - DONE .
+/10="attr5.jpg"
+/11="attr6.jpg"
+// 12 incongruent - DONE .
+/12="uattr6.jpg"
+// 13 - 14 congruent - DONE .
+/13="uattr7.jpg"
+/14="uattr8.jpg"
+// 15 - 18 incongruent - .
+/15="attr7_b.jpg"
+/16="attr8_b.jpg"
+/17="attr9_b.jpEg"
+/18="attr10_a.jpg"
+// 19 - 21 congruent.
+/19="uattr9.jpeg"
+/20="uattr10.jpg"
+/21="uattr11.jpg"
+// 22 - 23 icongruent.
+/22="attr11_a.jpg"
+/23="attr12_a.jpg"
+// 24 = congruent
+/24="uattr12.jpg"
 </item>
 
 >> List of words used during the test; 12 good, 12 negative.
@@ -651,17 +662,18 @@ testMC
 
 >> 1 = word appears on top; 2 = word appears on bottom
 <list wordPositions_testE>
-/ items = (2,2,2,2,2,2,1,1,1,1,1,1,2,2,2,2,2,2,1,1,1,1,1)
+/ items = (2,2,2,2,2,2,1,1,1,1,1,1,2,2,2,2,2,2,1,1,1,1,1,2)
 / select = values.selectStim
 </list>
 
->> 1 = congruent; 2 = incongruent 
+>> 1 = congruent; 2 = incongruent; this categorizes output.
 <list congruency_testE>
-/ items = (2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1)
+/ items = (1,1,2,2,1,1,2,2,2,1,1,
+		   2,1,1,2,2,2,2,1,1,1,2,2,1)
 / select = values.selectStim
 </list>
 
->> 
+>> These correspond to the positions in words_testE (1 here = 1 in words_testE)
 <item correctButton_testE>
 /1="positiveButton"
 /2="positiveButton"
@@ -875,6 +887,17 @@ expressions.meanRT_incongruent
 / size = (90%, 80%)
 </text>
 
+<text endTest>
+/ items = endScreen
+/ select = 1
+/ position = (50%, 50%)
+/ fontstyle = ("Arial", 4%, true, false, false, false, 5, 1)
+/ vjustify = center
+/ hjustify = center
+/ size = (90%, 80%)
+</text>
+
+
 <text newBlock>
 / items = instructions
 / select = 5
@@ -997,7 +1020,7 @@ continueButton_intro]
 / skip = [
 	values.countTestBlocks == 1;
 ]
-/ stimulusframes = [1 = clearscreen, end, exit]
+/ stimulusframes = [1 = clearscreen, end]
 / validresponse = (" ")
 / recorddata = false
 </trial>
@@ -1109,13 +1132,6 @@ General Helper Instruction Trials/Blocks
 / erase = false
 </text>
 
-<picture pic_testMC>
-/items = pics_testMC
-/ select = values.selectStimt
-/ position = (50%, 50%)
-/ size = (parameters.picsize, parameters.picSize)
-/ erase = false
-</picture>
 
 >> RELEVANT PART BELOW
 
@@ -1391,69 +1407,6 @@ Note: list stores the latency of correct responses for each relevant trial
 
 **** NOT NEEDED ****
 => MC: more congruent pairs
-<trial testMC>
-/ inputdevice = keyboard
-/ ontrialbegin = [
-	values.selectStim = list.testMC_itemnumbers.nextvalue;
-	values.wordposition = list.wordPositions_testMC.nextvalue;
-	values.congruence = list.congruency_testMC.nextvalue;
-	values.correctButton = item.correctButton_testMC.item(values.selectStim);
-	
-	if (values.wordposition == 1){
-		values.word_y = parameters.top_y;
-	} else {
-		values.word_y = parameters.bottom_y;
-	};
-	
-]
-/ stimulusframes = [1 = clearscreen, pic_testMC, Wordshadow_testMC, Word_testMC, goodKeyReminder, badKeyReminder]
-/ validresponse = (parameters.leftresponsekey, parameters.rightresponsekey)
-/ iscorrectresponse = [
-	if (values.correctButton == "positiveButton"){
-		if (trial.testMC.responsetext == values.goodkey){
-			return true;
-		} else {
-			return false;
-		};
-	} else {
-		if (trial.testMC.responsetext == values.badkey){
-			return true;
-		} else {
-			return false;
-		};		
-	};
-]
-/ beginresponsetime = 0
-/ responseinterrupt = trial
-/ ontrialend = [
-	list.accuracy.appendItem(trial.testMC.correct);
-	list.accuracyMC.appendItem(trial.testMC.correct);
-	if (values.congruence == 1){
-		list.accuracyCongruent.appendItem(trial.testMC.correct);
-		list.accuracyMCCongruent.appenditem(trial.testMC.correct);
-	} else {
-		list.accuracyIncongruent.appendItem(trial.testMC.correct);
-		list.accuracyMCIncongruent.appenditem(trial.testMC.correct);
-	};
-	
-	if (trial.testMC.correct){
-		list.latencies.appendItem(trial.testMC.latency);
-		list.latenciesMC.appendItem(trial.testMC.latency);
-		
-		if (values.congruence == 1){
-			list.latenciesCongruent.appendItem(trial.testMC.latency);
-			list.latenciesMCCongruent.appendItem(trial.testMC.latency);
-		} else {
-			list.latenciesIncongruent.appendItem(trial.testMC.latency);
-			list.latenciesMCIncongruent.appendItem(trial.testMC.latency);
-		};
-	};
-]
-/ trialduration = parameters.wordPresentationTime_test
-/ branch = [
-	return trial.ITI;
-]
-</trial>
 
 *****		THE ONE		*****
 => E: equal number congruent/incongruent pairs
@@ -1638,17 +1591,6 @@ Note: list stores the latency of correct responses for each relevant trial
 </block>
 
 >> NOT NEEDED
-<block testMC>
-/ onblockbegin = [
-	values.countTestBlocks += 1;
-]
-/ trials = [
-	1 = getReady1; 
-	2-49 = testMC; 
-	50 = break; 
-	51 = finish;
-]
-</block>
 
 >> THE ONE
 <block testE>
@@ -1658,8 +1600,6 @@ Note: list stores the latency of correct responses for each relevant trial
 / trials = [
 	1 = getReady1; 
 	2-24= testE; 
-	// Break not needed?
-	// 25 = break; 
 	25 = finish;
 ]
 </block>
@@ -1680,13 +1620,13 @@ Note: list stores the latency of correct responses for each relevant trial
 	};
 ]
 / blocks = [
-	//1 = intro;
-	//2 = practice1Intro;
-	//3 = practice1;
-	//4 = practice2Intro;
-	//5 = practice2;
-	//6 = testStart;
-	1 = testE;
+	1 = intro;
+	2 = practice1Intro;
+	3 = practice1;
+	4 = practice2Intro;
+	5 = practice2;
+	6 = testStart;
+	7 = testE;
 ]
 </expt>
 
